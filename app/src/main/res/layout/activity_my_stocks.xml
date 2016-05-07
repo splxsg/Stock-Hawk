@@ -27,4 +27,25 @@
       fab:layout_anchor="recycler_view"
       fab:layout_anchorGravity="bottom | end"
       />
+    <TextView
+        android:id="@+id/UpdateTimeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="syn at time"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="7dip"
+        android:gravity="center"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:id="@+id/updateBtn"
+        android:layout_gravity="bottom|center"
+        android:clickable="false"
+        android:focusable="false"
+        android:alpha="100"
+        android:background="#82828386" />
+
+
 </FrameLayout>

@@ -1,9 +1,14 @@
 package com.sam_chordas.android.stockhawk.rest;
 
 import android.content.ContentProviderOperation;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Log;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
 import com.sam_chordas.android.stockhawk.data.QuoteProvider;
+import com.sam_chordas.android.stockhawk.surfaceview.StockDetailFetch;
+
 import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -14,6 +19,7 @@ import org.json.JSONObject;
  */
 public class Utils {
 
+  private static @StockDetailFetch.Historyduration int datap;
   private static String LOG_TAG = Utils.class.getSimpleName();
 
   public static boolean showPercent = true;
@@ -72,7 +78,7 @@ public class Utils {
 
   public static ContentProviderOperation buildBatchOperation(JSONObject jsonObject){
     ContentProviderOperation.Builder builder = ContentProviderOperation.newInsert(
-        QuoteProvider.Quotes.CONTENT_URI);
+            QuoteProvider.Quotes.CONTENT_URI);
     try {
       String change = jsonObject.getString("Change");
       builder.withValue(QuoteColumns.SYMBOL, jsonObject.getString("symbol"));
@@ -92,4 +98,23 @@ public class Utils {
     }
     return builder.build();
   }
+
+  static public boolean checknetwork(Context mContext){
+    ConnectivityManager cm =
+            (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+    NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+    return activeNetwork!=null && activeNetwork.isConnectedOrConnecting();
+  }
+
+   static public @StockDetailFetch.Historyduration
+   int getdateduration()
+   {
+     return datap;
+   }
+
+  static public void setdateduration(@StockDetailFetch.Historyduration int d)
+  {
+    datap = d;
+  }
+
 }

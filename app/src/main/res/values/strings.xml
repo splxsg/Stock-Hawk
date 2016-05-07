@@ -1,13 +1,43 @@
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+  <!-- App title shown on the action bar-->
   <string name="app_name">Stock Hawk</string>
 
   <string name="action_example">Example action</string>
 
+  <!-- setting menu -->
   <string name="action_settings">Settings</string>
+  <!-- change unit button description-->
   <string name="action_change_units">Change Units</string>
+  <!-- Title of pop out window to search stock-->
   <string name="symbol_search">Symbol Search</string>
   <string name="content_test">Search for a Stock Symbol</string>
-  <string name="input_hint">FB</string>
+
+  <!-- default input of symbol search, not translatable-->
+  <string name="input_hint" translatable="false">FB</string>
   <string name="input_prefill"></string>
+  <!-- network and communication with server status -->
+  <string name="status_updated_text">Updated!</string>
+  <string name="status_server_down_text">No response on server</string>
+  <string name="status_server_invalid_text">Response incorrect, please update the APP</string>
+  <string name="status_unknow_text">Unknown error</string>
+  <string name="status_input_invalid_text">Invalid input, check the stock name please</string>
   <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+  <string name="status_nonetwork_text">No Network</string>
+
+  <!-- A11y -->
+  <string name="a11y_stock_fullname">Stock Name: <xliff:g id="name">%1$s</xliff:g></string>
+  <string name="a11y_stock_price">Current price: <xliff:g id="price">%1$s</xliff:g></string>
+  <string name="a11y_stock_change_rate">Stock change rate: <xliff:g id="rate">%1$s</xliff:g></string>
+  <string name="a11y_stock_change">Stock change: <xliff:g id="change">%1$s</xliff:g></string>
+  <string name="a11y_btn_add_stock">Add new stock</string>
+  <string name="a11y_btn_manual_update">Manually update stock</string>
+  
+
+  <string name="widget_no_stock_information">No Stock Information Available</string>
+
+    <string name="add_widget">Add widget</string>
+  <string name="title_widget_detail">Stock Widget</string>
+
+
 </resources>
