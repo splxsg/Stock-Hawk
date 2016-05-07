@@ -2101,9 +2101,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sam_chordas/android/stockhawk/widgets/StockWidgetViewsService.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/new_stock_widget_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sam_chordas/android/stockhawk/service/StockTaskService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sam_chordas/android/stockhawk/widgets/NewStockWidget.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/new_stock_widget.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sam_chordas/android/stockhawk/widgets/NewStockWidget.java" />
       </list>
     </option>
   </component>
