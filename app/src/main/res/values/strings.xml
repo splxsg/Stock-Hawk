@@ -24,6 +24,7 @@
   <string name="status_input_invalid_text">Invalid input, check the stock name please</string>
   <string name="network_toast">Uh-oh! This app requires an internet connection</string>
   <string name="status_nonetwork_text">No Network</string>
+  <string name="stocksaved">This stock is already saved!</string>
 
   <!-- A11y -->
   <string name="a11y_stock_fullname">Stock Name: <xliff:g id="name">%1$s</xliff:g></string>
