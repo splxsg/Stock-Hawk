@@ -12,6 +12,7 @@
   <!-- Title of pop out window to search stock-->
   <string name="symbol_search">Symbol Search</string>
   <string name="content_test">Search for a Stock Symbol</string>
+  <string name="widget_no_stock_information">No Stock Information Available</string>
 
   <!-- default input of symbol search, not translatable-->
   <string name="input_hint" translatable="false">FB</string>
@@ -35,7 +36,7 @@
   <string name="a11y_btn_manual_update">Manually update stock</string>
   
 
-  <string name="widget_no_stock_information">No Stock Information Available</string>
+
 
     <string name="add_widget">Add widget</string>
   <string name="title_widget_detail">Stock Widget</string>
